@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.JobDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_submit_bill">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal|vertical"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_2sdp">
+
+            <TableLayout
+                android:id="@+id/tableInvoices"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:background="@color/colorAccent"
+                android:isScrollContainer="true"
+                android:stretchColumns="*"/>
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_submit_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="@string/submit_bill"
+        android:background="@drawable/round_corner_red"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true">
+
+
+
+    </Button>
+</RelativeLayout>

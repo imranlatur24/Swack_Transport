@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/round_corner">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enterpassword"
+        android:maxLength="20"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:background="@drawable/round_corner"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtRePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/entercpassword"
+        android:maxLength="20"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:background="@drawable/round_corner"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/otp_verification"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:inputType="number"
+        android:background="@drawable/round_corner"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/resendOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="end"
+        android:text="@string/otp_resend"/>
+
+    <Button
+        android:id="@+id/btnOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_corner_red"
+        android:textColor="@color/colorWhite"
+        android:text="@string/change_passord"/>
+
+</LinearLayout>

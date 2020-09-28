@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddVehicleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSubmitVehicle"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/Black"
+                    android:text="@string/select_company"/>
+
+                <view.TextInputAutoCompleteTextView
+                    android:id="@+id/spinner_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:hint="@string/select_company"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/round_corner_backgound"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+               <!-- <AutoCompleteTextView
+                    android:id="@+id/spinner_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="@string/select_company"
+                    android:padding="@dimen/_3sdp"
+                    android:background="@drawable/round_corner_backgound"/>
+-->            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/Black"
+                    android:text="@string/select_type"/>
+
+                <view.TextInputAutoCompleteTextView
+                    android:id="@+id/spinner_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:hint="@string/select_type"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/round_corner_backgound"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/Black"
+                    android:text="@string/select_load"/>
+                <view.TextInputAutoCompleteTextView
+                    android:id="@+id/spinner_load"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:hint="@string/select_load"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/round_corner_backgound"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/Black"
+                    android:text="Select Tyres"/>
+
+                <view.TextInputAutoCompleteTextView
+                    android:id="@+id/spinner_tyres"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:hint="@string/select_type"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/round_corner_backgound"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+               </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/Black"
+                    android:text="@string/select_modal_years"/>
+
+                <view.TextInputAutoCompleteTextView
+                    android:id="@+id/spinner_modal_years"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:hint="@string/select_modal_years"
+                    android:inputType="number"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/round_corner_backgound"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_vehicle_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:textColor="@android:color/black"
+                    android:hint="@string/vehicle_no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_vehicle_reading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"
+                    android:hint="@string/vehicle_km_reading" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_vehicle_insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:hint="@string/insurance_expired_date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_vehicle_rc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@android:color/black"
+                    android:hint="@string/rc_expired_date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/black"
+                android:text="@string/vehicle_photo" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/van"
+                    android:layout_margin="4dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/add_vehicle"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_camare"
+                    android:contentDescription="@string/app_name"
+                    android:layout_gravity="end"
+                    android:layout_margin="16dp" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/black"
+                android:text="@string/vehicle_insurance_photo" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/ripple"
+                    android:layout_margin="4dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/add_insurance"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_camare"
+                    android:contentDescription="@string/app_name"
+                    android:layout_gravity="end"
+                    android:layout_margin="16dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/black"
+                android:text="@string/vehicle_rc_photo" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/profile_rc"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/rc_book"
+                    android:layout_margin="4dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/add_rc"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_camare"
+                    android:contentDescription="@string/app_name"
+                    android:layout_gravity="end"
+                    android:layout_margin="16dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSubmitVehicle"
+        android:text="@string/submit"
+        android:background="@drawable/round_corner_red"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

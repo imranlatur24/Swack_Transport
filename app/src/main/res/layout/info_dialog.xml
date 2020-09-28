@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical">
+    <LinearLayout android:layout_height="@dimen/_50sdp" android:layout_width="match_parent" android:orientation="horizontal" android:gravity="center" android:background="@color/colorPrimary">
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Transport Info" android:textStyle="bold" android:textSize="@dimen/_20sdp" android:textColor="@color/white" android:layout_weight="0.5" android:paddingLeft="@dimen/_5sdp"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="date"
+        android:textStyle="bold" android:textSize="@dimen/_16sdp"
+        android:textColor="@color/white" android:layout_weight="0.5"
+        android:paddingLeft="@dimen/_5sdp" android:maxLength="11"
+        android:id="@+id/date"/>
+</LinearLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_margin="@dimen/_5sdp">
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Order Id" android:textSize="@dimen/_15sdp" android:textColor="@color/black" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="end" android:text="Order Id" android:textSize="@dimen/_15sdp" android:id="@+id/transport_order_id" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp"/>
+</RelativeLayout>
+
+    <View android:layout_height="@dimen/_1sdp" android:layout_width="match_parent" android:background="@color/gray"/>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_margin="@dimen/_5sdp">
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="From District" android:textSize="@dimen/_15sdp" android:textColor="@color/black" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp" android:layout_marginTop="@dimen/_4sdp"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:gravity="end" android:text="From" android:textSize="@dimen/_15sdp"
+        android:id="@+id/transport_from" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp"/>
+
+</RelativeLayout>
+
+    <View android:layout_height="@dimen/_1sdp" android:layout_width="match_parent" android:background="@color/gray"/>
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_margin="@dimen/_5sdp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="To District" android:textSize="@dimen/_15sdp" android:textColor="@color/black" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp" android:layout_marginTop="@dimen/_4sdp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:gravity="end" android:text="From" android:textSize="@dimen/_15sdp"
+        android:id="@+id/transport_to" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp"/>
+
+</RelativeLayout>
+
+    <View android:layout_height="@dimen/_1sdp" android:layout_width="match_parent" android:background="@color/gray"/>
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_margin="@dimen/_5sdp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="From Taluka" android:textSize="@dimen/_15sdp" android:textColor="@color/black" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp" android:layout_marginTop="@dimen/_4sdp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:gravity="end" android:text="From" android:textSize="@dimen/_15sdp"
+        android:id="@+id/transport_from_taluka" android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_4sdp"/>
+
+</RelativeLayout>
+
+    <View android:layout_height="@dimen/_1sdp" android:layout_width="match_parent" android:background="@color/gray"/>
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_margin="@dimen/_5sdp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="To Taluka" android:textSize="@dimen/_15sdp" android:textColor="@color/black" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp" android:layout_marginTop="@dimen/_4sdp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:gravity="end" android:text="to taluka" android:textSize="@dimen/_15sdp"
+        android:id="@+id/transport_to_taluka" android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_4sdp"/>
+
+</RelativeLayout>
+
+    <View android:layout_height="@dimen/_1sdp" android:layout_width="match_parent" android:background="@color/gray"/>
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_margin="@dimen/_5sdp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Distance" android:textSize="@dimen/_15sdp" android:textColor="@color/black" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp" android:layout_marginTop="@dimen/_4sdp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="end" android:text="Distance" android:textSize="@dimen/_15sdp" android:id="@+id/transport_distance" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp"/>
+
+</RelativeLayout>
+
+    <View android:layout_height="@dimen/_1sdp" android:layout_width="match_parent" android:background="@color/gray"/>
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_margin="@dimen/_5sdp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Status" android:textSize="@dimen/_15sdp" android:textColor="@color/black" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp" android:layout_marginTop="@dimen/_4sdp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="end" android:text="Status" android:textSize="@dimen/_15sdp" android:id="@+id/transport_status" android:layout_marginRight="@dimen/_4sdp" android:layout_marginLeft="@dimen/_4sdp"/>
+
+</RelativeLayout>
+
+    <View android:layout_height="@dimen/_1sdp" android:layout_width="match_parent" android:background="@color/gray"/>
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_margin="@dimen/_5sdp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:text="Address"
+           android:layout_weight="0.7"
+           android:textSize="@dimen/_15sdp"
+           android:textColor="@color/black"
+           android:layout_marginRight="@dimen/_4sdp"
+           android:layout_marginLeft="@dimen/_4sdp"
+           android:layout_marginTop="@dimen/_4sdp"/>
+
+       <TextView
+           android:layout_weight="0.3"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:gravity="end"
+           android:text="address"
+           android:maxLines="4"
+           android:textSize="@dimen/_15sdp"
+           android:id="@+id/transport_address2"
+           android:layout_marginRight="@dimen/_4sdp"
+           android:layout_marginLeft="@dimen/_4sdp"/>
+   </LinearLayout>
+
+</RelativeLayout>
+
+    <View android:layout_height="@dimen/_1sdp" android:layout_width="match_parent" android:background="@color/gray"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@color/colorPrimary" android:text="Close" android:textSize="@dimen/_16sdp" android:textColor="@color/colorWhite" android:id="@+id/btnCancel" android:layout_marginTop="@dimen/_4sdp"/>
+
+</LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCategory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="1dp"
+    app:cardCornerRadius="3dp">
+    <LinearLayout
+        android:padding="@dimen/_2sdp"
+        android:id="@+id/ltyCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_22sdp"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/_2sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:paddingLeft="@dimen/_3sdp"
+                android:id="@+id/txt_joborderid"
+                android:layout_weight="0.5"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="job order id"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/txt_jobid"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="job id"
+                android:paddingRight="@dimen/_3sdp"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:paddingLeft="@dimen/_3sdp"
+            android:id="@+id/txtJobDate"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="@dimen/_2sdp"
+            android:text="job date"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingLeft="@dimen/_3sdp"
+                android:id="@+id/txtJobUnique"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/_11sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="@color/colorRed"
+                android:drawablePadding="@dimen/_2sdp"
+                android:text="job date"/>
+
+            <TextView
+                android:paddingLeft="@dimen/_3sdp"
+                android:id="@+id/txtJobLocation"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/_11sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="@color/colorGreen"
+                android:drawablePadding="@dimen/_2sdp"
+                android:text="job date"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:paddingLeft="@dimen/_3sdp"
+            android:id="@+id/txtJobCustomer"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:drawableTint="@color/colorRed"
+            android:drawablePadding="@dimen/_2sdp"
+            android:text="job date"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingLeft="@dimen/_3sdp"
+                android:id="@+id/txtJobDistance"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_weight="0.6"
+                android:textSize="@dimen/_11sdp"
+                android:maxLines="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="@color/colorPrimary"
+                android:drawablePadding="@dimen/_2sdp"
+                android:text="job date"/>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/_3sdp"
+            android:id="@+id/txtJobStatus"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textAllCaps="true"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@drawable/round_corner_rect_orange"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_weight="0.4"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:textStyle="bold"
+            android:padding="@dimen/_2sdp"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="@dimen/_2sdp"
+            android:text="job date"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

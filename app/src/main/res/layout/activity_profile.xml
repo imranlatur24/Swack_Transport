@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardElevation="1dp"
+            app:cardMaxElevation="1dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="@string/profile_image"
+                    android:gravity="center_horizontal" />
+
+                <FrameLayout
+                    android:id="@+id/frame"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/pic"
+                        android:id="@+id/profile_image"/>
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="4dp"
+                        android:adjustViewBounds="true"
+                        android:background="@mipmap/ic_camare_round"
+                        android:contentDescription="@string/app_name" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardElevation="1dp"
+            app:cardMaxElevation="1dp"
+            app:cardBackgroundColor="@color/colorWhite">
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:text="@string/profile_name" />
+
+                <EditText
+                    android:id="@+id/profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:hint="@string/profile_name"
+                    android:textColorHint="@color/colorBlack"
+                    android:inputType="textCapWords"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:text="@string/profile_email" />
+
+                <EditText
+                    android:id="@+id/profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:hint="@string/profile_email"
+                    android:textColorHint="@color/colorBlack"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:text="@string/mobile" />
+
+                <EditText
+                    android:id="@+id/profile_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:hint="@string/mobile"
+                    android:textColorHint="@color/colorBlack"
+                    android:inputType="number"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:text="@string/profile_address" />
+
+                <EditText
+                    android:id="@+id/profile_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:hint="@string/profile_address"
+                    android:textColorHint="@color/colorBlack"
+                    android:inputType="textCapWords"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:text="@string/profile_aadhar" />
+
+                <FrameLayout
+                    android:id="@+id/frame2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/profile_aadhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="4dp"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/add_aadhar"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:adjustViewBounds="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/ic_camare"
+                        android:contentDescription="@string/app_name"
+                        android:layout_gravity="end"
+                        android:layout_margin="16dp" />
+                </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:text="@string/profile_pan" />
+
+                <FrameLayout
+                    android:id="@+id/frame_pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/profile_pan"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="4dp"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/add_pan"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:adjustViewBounds="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/ic_camare"
+                        android:contentDescription="@string/app_name"
+                        android:layout_gravity="end"
+                        android:layout_margin="16dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/black"
+                    android:text="@string/profile_main" />
+                <FrameLayout
+                    android:id="@+id/frame_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_corner"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/profile_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="4dp"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/add_image"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:adjustViewBounds="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/ic_camare"
+                        android:contentDescription="@string/app_name"
+                        android:layout_gravity="end"
+                        android:layout_margin="16dp" />
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/fabProfileEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/round_corner_red"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:text="@string/update_profile"/>
+
+    </LinearLayout>
+
+</ScrollView>
